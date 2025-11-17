@@ -1,0 +1,39 @@
+:root{--bg:#0b1020;--card:#121939;--text:#e8ebff;--muted:#b7c0ff;--brand:#6c8cff;--brand-2:#a088ff}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;height:100%}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(1200px 800px at 10% 0%,#11183a 0%,#0b1020 60%),linear-gradient(180deg,#0b1020 0%,#0b1020 100%);color:var(--text)}
+
+.container{max-width:1000px;margin:0 auto;padding:0 20px}
+.header, .footer{position:sticky;z-index:10;backdrop-filter:saturate(140%) blur(8px);background:rgba(10,15,35,0.6)}
+.header{top:0;border-bottom:1px solid rgba(255,255,255,0.08)}
+.footer{bottom:0;border-top:1px solid rgba(255,255,255,0.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.nav a{color:var(--text);text-decoration:none;margin:0 10px;padding:8px 12px;border-radius:8px}
+.nav a:hover{background:rgba(255,255,255,0.06)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.badge{font-size:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:4px 8px;border-radius:999px;color:white}
+
+.hero{padding:90px 0 50px}
+.hero h1{font-size:48px;line-height:1.1;margin:0 0 14px}
+.hero p{font-size:18px;color:var(--muted);margin:0 0 26px}
+.cta{display:inline-flex;gap:10px}
+.button{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;border:0;padding:12px 18px;border-radius:12px;font-weight:600;cursor:pointer}
+.button.secondary{background:transparent;border:1px solid rgba(255,255,255,0.2)}
+
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:20px}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+
+.countdown{display:flex;gap:14px;align-items:center}
+.count-seg{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--card);border:1px solid rgba(255,255,255,0.08);padding:16px 14px;border-radius:12px;min-width:90px}
+.count-num{font-size:28px;font-weight:700}
+.count-label{font-size:12px;color:var(--muted)}
+
+.main{padding-bottom:70px}
+.form{display:grid;gap:12px}
+.input, .textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.16);background:rgba(255,255,255,0.04);color:var(--text)}
+.textarea{min-height:120px}
+.success{color:#39d98a}
+.error{color:#ff8181}
+
+.footer-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0;font-size:14px;color:var(--muted)}
